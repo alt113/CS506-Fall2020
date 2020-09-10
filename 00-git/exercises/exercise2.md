@@ -2,28 +2,28 @@
 
 ## Step 1: Fork this repo (on GitHub)
 
-https://github.com/gallettilance/CS506-Spring2020
+https://github.com/gallettilance/CS506-Fall2020
 
 ## Step 2: Clone your fork
 
 Navigate to your fork of the above repo and clone it locally. 
 
 ```bash
-git clone https://github.com/<username>/CS506-Spring2020.git
+git clone https://github.com/<username>/CS506-Fall2020.git
 ```
 
 ## Step 3: `cd` into the repo
 
 ```bash
-cd CS506-Spring2020
+cd CS506-Fall2020
 ```
 
 ## Step 4: look at remotes
 
 ```bash
 git remote -v
-origin	https://github.com/<username>/CS506-Spring2020.git (fetch)
-origin	https://github.com/<username>/CS506-Spring2020.git (push)
+origin	https://github.com/<username>/CS506-Fall2020.git (fetch)
+origin	https://github.com/<username>/CS506-Fall2020.git (push)
 ```
 
 ## Step 5: add an 'upstream' remote
@@ -31,17 +31,17 @@ origin	https://github.com/<username>/CS506-Spring2020.git (push)
 It should point to the repository you forked
 
 ```bash
-git remote add upstream https://github.com/gallettilance/CS506-Spring2020.git
+git remote add upstream https://github.com/gallettilance/CS506-Fall2020.git
 ```
 
 ## Step 6: look at remotes
 
 ```bash
 git remote -v
-origin	 https://github.com/<username>/CS506-Spring2020.git (fetch)
-origin	 https://github.com/<username>/CS506-Spring2020.git (push)
-upstream https://github.com/gallettilance/CS506-Spring2020.git (fetch)
-upstream https://github.com/gallettilance/CS506-Spring2020.git (push)
+origin	 https://github.com/<username>/CS506-Fall2020.git (fetch)
+origin	 https://github.com/<username>/CS506-Fall2020.git (push)
+upstream https://github.com/gallettilance/CS506-Fall2020.git (fetch)
+upstream https://github.com/gallettilance/CS506-Fall2020.git (push)
 ```
 
 ## Step 7: list branches

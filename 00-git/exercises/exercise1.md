@@ -48,8 +48,8 @@ cd ~/Desktop/my/favorite/path
 <kbd> git clone <url_name> </kbd> 
 
 ```bash
-git clone https://github.com/gallettilance/CS506-Spring2020.git
-Cloning into 'CS506-Spring2020'...
+git clone https://github.com/gallettilance/CS506-Fall2020.git
+Cloning into 'CS506-Fall2020'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
@@ -60,7 +60,7 @@ Unpacking objects: 100% (3/3), done.
 <kbd> cd <repo_name> </kbd>
 
 ```bash
-cd CS506-Spring2020 
+cd CS506-Fall2020 
 ```
 
 ## Step 6: look at remotes
@@ -69,8 +69,8 @@ cd CS506-Spring2020
 
 ```bash
 git remote -v
-origin	https://github.com/gallettilance/CS506-Spring2020.git (fetch)
-origin	https://github.com/gallettilance/CS506-Spring2020.git (push)
+origin	https://github.com/gallettilance/CS506-Fall2020.git (fetch)
+origin	https://github.com/gallettilance/CS506-Fall2020.git (push)
 ```
 
 ## Step 7: create a branch
