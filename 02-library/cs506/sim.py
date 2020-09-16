@@ -40,7 +40,10 @@ def jaccard_dist(x, y):
 
         *Note: the answer is rounded up to 2 decimal points
     """
-    return round(1-(list_intersection_size(x, y)/list_union_size(x, y)), 2)
+    try:
+        return round((list_union_size(x, y) - list_intersection_size(x, y))/list_union_size(x, y), 2)
+    except ZeroDivisionError:
+        return 0
 
 
 def cosine_sim(x, y):
@@ -52,7 +55,10 @@ def cosine_sim(x, y):
 
         *Note: the answer is rounded up to 2 decimal points
     """
-    return round(list_dot_product(x, y)/(list_magnitude(x) * list_magnitude(y)), 2)
+    try:
+        return round(list_dot_product(x, y)/(list_magnitude(x) * list_magnitude(y)), 2)
+    except ZeroDivisionError:
+        return 0
 
 # Feel free to add more
 
@@ -61,14 +67,14 @@ def list_intersection_size(list1, list2):
     """
         Compute the number of elements in the intersection between list1 and list2
     """
-    return len([value for value in list1 if value in list2])
+    return len(list(set(list1) & set(list2)))
 
 
 def list_union_size(list1, list2):
     """
         Compute the number of elements in the union between list1 and list2
     """
-    return len(list1) + len(list2) - list_intersection_size(list1, list2)
+    return len(list(set(list1) | set(list2)))
 
 
 def list_dot_product(list1, list2):
